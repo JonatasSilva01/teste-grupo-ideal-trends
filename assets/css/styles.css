@@ -1,0 +1,311 @@
+/* reset default styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+html, body {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* THEME */
+.primary {
+    background: #020085;
+}
+
+.secondary-lighter {
+    background: #d1d1d1;
+}
+
+.secondary {
+    background: #b4b4b4;
+}
+
+.secondary-dark {
+    background: #454545;
+}
+
+.text-color {
+    color: #b2b2b2;
+}
+
+.text-color-dark {
+    color: #7c7c7c;
+}
+
+.text-color-contrast {
+    color: #FFF;
+}
+
+.text-size {
+    font-size: 0.875rem;
+}
+
+.title-size {
+    font-size: 1.25rem;
+}
+
+.inner-space {
+    padding: 8px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 890px;   
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.image {
+    position: relative;
+}
+
+.inner-shadow  {
+    box-shadow: inset 0 0 28px rgba(0,0,0,0.4);
+} 
+
+/* top header */
+.top-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 769px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* section slider */
+.section-slider {
+    padding-bottom: 0;
+}
+
+.section-slider .logo {
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width: 769px) {
+    .section-slider .logo {
+        margin-bottom: 15px;
+    }
+}
+
+/* COMPONENTES */
+
+/* phone list */
+.phone-list {
+    display: flex;
+}
+
+.phone-list .link {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+/* logo */
+.logo {
+    width: 189px;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+/* navigation */
+.navigation > .list {
+    display: flex;
+}
+
+.navigation > .list > .item {
+    margin-left: 15px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.navigation > .list > .item  > .submenu {
+    top: 100%;
+    left: 0;
+}
+
+.navigation .submenu {
+    position: absolute;
+    z-index: 6;
+    padding: 11px 0;
+    left: 100%;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu > .item {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    margin-bottom: 12px;
+    position: relative;
+    padding: 0 26px;
+}
+
+.submenu > .item:last-child {
+    margin-bottom: 0;
+}
+
+/* navigation animation*/
+.navigation .item:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+} 
+
+/* slider */
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 290px;
+}
+
+/* rule list */
+.rule-list {
+    list-style: disc;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+/* box rules */
+.box.rules .title {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.box.rules .subtitle {
+   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 769px) {
+    .box.rules {
+        margin-bottom: 8px;
+    }
+}
+
+/* image rules */
+.image-rules {
+    width: 325px;
+    height: 212px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+/* container rules*/
+.container.rules {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 769px) {
+    .container.rules {
+        flex-direction: column;
+    }
+}
+
+/* container highlighted*/
+.container.highlighted {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container.highlighted .title {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* card */
+.card {
+    width: 196px;
+}
+
+.card .image {
+    width: 100%;
+    height: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.card .description {
+    margin: 15px 0;
+    display: block;
+    line-height: 1.2rem;
+}
+
+/* footer */
+.footer {
+    padding: 20px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* footer navigation */
+.footer-navigation {
+    margin-bottom: 74px;
+}
+
+.footer-navigation .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-navigation .item {
+    margin: 0 10px 10px;
+    font-weight: 600;
+}
+
+
+/* image label */
+.label-image {
+    font-size: 1.4rem;
+    font-style: italic;
+    position: absolute;
+    bottom: 15px;
+    font-weight: lighter;
+}
+
+
+
+
