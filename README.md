@@ -7,4 +7,4 @@ $ npm start
 
 ```
 
-## O projeto irá iniciar neste endereço http://127.0.0.1:8080/
+## No console irá ser informado o endereço de acesso da aplicação
